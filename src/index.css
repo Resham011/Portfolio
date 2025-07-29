@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-light-background text-light-text dark:bg-dark-background dark:text-dark-text font-sans transition-colors duration-300;
+  }
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { @apply bg-light-background dark:bg-dark-background; }
+::-webkit-scrollbar-thumb { @apply bg-light-accent/50 dark:bg-dark-accent/50 rounded-full border-2 border-transparent bg-clip-content; }
+::-webkit-scrollbar-thumb:hover { @apply bg-light-accent/80 dark:bg-dark-accent/80; }
