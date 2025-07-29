@@ -97,8 +97,8 @@ export const projectsData = [
   image: Portfolio,
   description: 'A responsive, visually polished portfolio website built with React and Tailwind CSS to showcase my projects, skills, and technical journey.',
   tags: ['React', 'Vite', 'Tailwind', 'Node.js'],
-  live: 'https://github.com/Resham011/TIC-TAC-TOE-GAME',
-  source: 'https://github.com/resham011/Portfolio-Website',
+  live: 'https://portfolio-three-chi-iwz6yy3ki4.vercel.app/',
+  source: 'https://github.com/Resham011/Portfolio',
   details: {
     problem: 'As a developer, having a strong personal brand is essential. I needed a platform to professionally present my work, skills, and background in a way that reflects my technical abilities.',
     solution: 'I developed a full-stack portfolio website using React with Vite for blazing-fast performance and Tailwind CSS for a sleek, responsive UI. The site features a dark/light theme toggle, smooth scroll animations, interactive project modals, and a working contact form. It’s optimized for both desktop and mobile viewing, giving visitors an intuitive and engaging experience.',
