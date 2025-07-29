@@ -2,7 +2,7 @@ import React from 'react';
 import { FaBriefcase, FaChartLine, FaCertificate, FaUserGraduate, FaLightbulb, FaTrophy, FaJava } from 'react-icons/fa';
 import { SiTailwindcss, SiVite, SiMongodb, SiExpress, SiCplusplus, SiPostman, SiFigma, SiStreamlit, SiReact, SiNodedotjs, SiJavascript, SiPython, SiHtml5, SiCss3, SiGit, SiGithub } from 'react-icons/si';
 
-import Leetcode from './assets/achievement/LeetCode.png';
+import Leetcode from './assets/achievement/Leetcode.png';
 import Reem from './assets/achievement/Reem.png';
 import GAO from './assets/achievement/GAO.jpeg';
 import HP from './assets/achievement/HP.jpg';
