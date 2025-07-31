@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { FaPlus } from 'react-icons/fa';
 import SectionWrapper from './SectionWrapper';
 import { experienceData } from '../data';
 
@@ -70,11 +71,12 @@ const Experience = () => {
                 <div className="space-y-12">
                     {experienceData.map((item, index) => {
                         const Icon = item.icon;
+                        const isEven = index % 2 === 0;
                         return (
                             <motion.div 
                                 key={index} 
                                 className="flex items-start"
-                                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                                initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6, delay: 0.1 }}
                                 viewport={{ once: true }}
@@ -83,11 +85,11 @@ const Experience = () => {
                                     <Icon />
                                 </div>
                                 <div className="w-full pl-16 md:pl-0">
-                                    <div className={`md:flex items-start ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                                    <div className={`md:flex items-start ${isEven ? 'md:flex-row-reverse' : ''}`}>
                                         <div className="md:w-1/2"></div>
                                         <div className="md:w-1/2">
-                                            <div 
-                                                className={`p-6 rounded-lg shadow-lg border border-white/10 bg-white/5 dark:bg-white/10 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:border-purple-500/50 hover:shadow-purple-500/10 ${index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'}`}
+                                            <motion.div 
+                                                className={`relative p-6 rounded-lg shadow-lg border border-white/10 bg-white/5 dark:bg-white/10 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:border-purple-500/50 hover:shadow-purple-500/10 ${isEven ? 'md:mr-12' : 'md:ml-12'}`}
                                                 onMouseEnter={() => handleMouseEnter(index)}
                                                 onMouseLeave={handleMouseLeave}
                                                 onClick={() => handleClick(index)}
@@ -122,7 +124,18 @@ const Experience = () => {
                                                         </motion.div>
                                                     )}
                                                 </AnimatePresence>
-                                            </div>
+                                                
+                                                {/* Animated plus/minus icon with corrected positioning */}
+                                                <motion.div
+                                                    className={`absolute -bottom-2.5 w-7 h-7 rounded-full bg-gradient-to-br from-purple-600 to-purple-400 flex items-center justify-center shadow-lg border-2 border-white/50 
+                                                        ${isEven ? '-right-2.5 md:right-auto md:-left-2.5' : '-right-2.5'}`}
+                                                    whileHover={{ scale: 1.15 }}
+                                                    animate={{ rotate: activeIndex === index ? 45 : 0 }}
+                                                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                                                >
+                                                    <FaPlus className="text-white text-xs" />
+                                                </motion.div>
+                                            </motion.div>
                                         </div>
                                     </div>
                                 </div>

@@ -96,7 +96,7 @@ export const projectsData = [
   title: 'Personal Portfolio Website',
   image: Portfolio,
   description: 'A responsive, visually polished portfolio website built with React and Tailwind CSS to showcase my projects, skills, and technical journey.',
-  tags: ['React', 'Vite', 'Tailwind', 'Node.js'],
+  tags: ['React', 'Vite', 'Tailwind'],
   live: 'https://portfolio-three-chi-iwz6yy3ki4.vercel.app/',
   source: 'https://github.com/Resham011/Portfolio',
   details: {
