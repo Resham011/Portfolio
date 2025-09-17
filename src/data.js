@@ -10,14 +10,22 @@ import HackIndia from './assets/achievement/HackIndia.jpg';
 import Udemy from './assets/achievement/Udemy.jpg';
 
 import MRS from './assets/projects/MRS.png';
-import TTO from './assets/projects/TIC-TAC-TOE.png';
+import AlgoRecall from './assets/projects/AlgoRecall.png';
 import Portfolio from './assets/projects/Portfolio.png';
 import Portfolio_1 from './assets/projects/Portfolio_1.png';
 import Portfolio_2 from './assets/projects/Portfolio_2.png';
 import Portfolio_3 from './assets/projects/Portfolio_3.png';
-import TTO_1 from './assets/projects/TTO_1.png';
-import TTO_2 from './assets/projects/TTO_2.png';
-import TTO_3 from './assets/projects/TTO_3.png';
+import AlgoRecall_1 from './assets/projects/AlgoRecall-1.png';
+import AlgoRecall_2 from './assets/projects/AlgoRecall-2.png';
+import AlgoRecall_3 from './assets/projects/AlgoRecall-3.png';
+import AlgoRecall_4 from './assets/projects/AlgoRecall-4.png';
+import AlgoRecall_5 from './assets/projects/AlgoRecall-5.png';
+import AlgoRecall_6 from './assets/projects/AlgoRecall-6.png';
+import AlgoRecall_7 from './assets/projects/AlgoRecall-7.png';
+import AlgoRecall_8 from './assets/projects/AlgoRecall-8.png';
+import AlgoRecall_9 from './assets/projects/AlgoRecall-9.png';
+import AlgoRecall_10 from './assets/projects/AlgoRecall-10.png';
+import AlgoRecall_11 from './assets/projects/AlgoRecall-11.png';
 import MRS_1 from './assets/projects/MRS_1.png';
 import MRS_2 from './assets/projects/MRS_2.png';
 
@@ -78,6 +86,29 @@ export const experienceData = [
 ];
 
 export const projectsData = [
+     {
+  title: 'AlgoRecall',
+  image: AlgoRecall, 
+  description: 'A full-stack web app to log, revise, and master coding problems with customized revision sessions and spaced repetition.',
+  tags: ['MERN', 'Redux', 'JWT', 'Tailwind'],
+  live: 'https://algorecall-vert.vercel.app/', 
+  source: 'https://github.com/Resham011/AlgoRecall',
+  features: [
+    'Secure signup, login, email verification, and JWT-based authentication',
+    'Add, edit, and organize coding problems with topics, companies, and tags',
+    'Customized revision sessions: random topic, random company, or combined topic + company',
+    'Spaced repetition to reinforce memory and long-term retention',
+    'Analytics and progress tracking: streaks, revision counts, and performance charts',
+    'Dark/light theme toggle and responsive UI for desktop and mobile',
+    'Robust backend with Express + MongoDB, error handling, and route protection'
+  ],
+  details: {
+    problem: 'Practicing coding problems is easy, but retaining solutions and revising them effectively is a challenge. I needed a system to organize solved problems and reinforce memory through structured revisions.',
+    solution: 'I developed AlgoRecall, a full-stack MERN application with authentication, problem CRUD operations, and a revision system powered by spaced repetition. Users can revise problems by topic, company, or even a random combination of both, simulating real interview conditions. The platform also includes personalized settings, analytics dashboards, and a smooth, responsive UI built with Tailwind CSS.',
+    challenges: 'Designing the revision logic was complex — balancing spaced repetition with randomization while keeping the system user-friendly. Implementing secure authentication with JWT, managing state with Redux, and ensuring seamless UI responsiveness across devices added to the learning curve but made the project robust.',
+    images: [AlgoRecall, AlgoRecall_1, AlgoRecall_2, AlgoRecall_3, AlgoRecall_4, AlgoRecall_5, AlgoRecall_6, AlgoRecall_7, AlgoRecall_8, AlgoRecall_9, AlgoRecall_10, AlgoRecall_11] // replace with your project screenshots
+  }
+},
 {
   title: 'Movie Recommendation System',
   image: MRS,
@@ -104,20 +135,6 @@ export const projectsData = [
     solution: 'I developed a full-stack portfolio website using React with Vite for blazing-fast performance and Tailwind CSS for a sleek, responsive UI. The site features a dark/light theme toggle, smooth scroll animations, interactive project modals, and a working contact form. It’s optimized for both desktop and mobile viewing, giving visitors an intuitive and engaging experience.',
     challenges: 'Creating a dynamic yet performant design was a balancing act. I had to fine-tune animation timings, structure reusable components efficiently, and ensure cross-browser/device compatibility. Implementing the interactive project modal and theme persistence added an extra layer of complexity that was rewarding to solve.',
     images: [Portfolio, Portfolio_1, Portfolio_2, Portfolio_3]
-  }
-},
-{
-  title: 'Tic-Tac-Toe Game',
-  image: TTO,
-  description: 'A lightweight and interactive Tic-Tac-Toe game built using HTML, CSS, and JavaScript, complete with real-time win detection and responsive design.',
-  tags: ['HTML', 'CSS', 'JavaScript'],
-  live: 'https://resham011.github.io/TIC-TAC-TOE-GAME/',
-  source: 'https://github.com/Resham011/TIC-TAC-TOE-GAME',
-  details: {
-    problem: 'To sharpen my front-end development fundamentals, I decided to build a classic game with interactive logic and user experience at its core.',
-    solution: 'I created a fully functional Tic-Tac-Toe game using pure JavaScript, HTML, and CSS. The game handles alternating turns, detects winning combinations or draws in real time, and includes responsive layout styling for mobile and desktop. Visual feedback like hover states and winning highlights enhance the user experience.',
-    challenges: 'The key challenge was implementing the win-checking algorithm without hardcoding every possible condition. I used a clean and scalable approach to evaluate winning patterns, and ensured the UI was responsive and intuitive across all screen sizes. Debugging edge cases, like draw detection and resetting the game state correctly, helped me solidify core programming concepts.',
-    images: [TTO_1, TTO_3, TTO_2, TTO]
   }
 },
 ];
