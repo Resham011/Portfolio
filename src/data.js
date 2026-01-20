@@ -51,7 +51,7 @@ export const experienceData = [
         title: 'Contributor (Remote)', 
         company: 'GSSOC 2025', 
         description: 'Selected as a contributor for GirlScript Summer of Code 2025, contributing to open-source projects, collaborating with a global community of developers, and enhancing software development skills.', 
-        isCurrent: true, 
+        isCurrent: false, 
         icon: FaBriefcase,
         details: [
             "Collaborated on a large-scale open-source project, following agile methodologies.",
@@ -64,7 +64,7 @@ export const experienceData = [
     title: 'Project Trainee (Delhi, India)', 
     company: 'Defence Research and Development Organisation (DRDO) ', 
     description: 'Selected as a Project Trainee to engineer defense-grade web applications and microservices, focusing on secure authentication and real-time radar data visualization.', 
-    isCurrent: true, 
+    isCurrent: false, 
     icon: FaBriefcase,
     details: [
         "Engineered robust role-based authentication and secure communication protocols for defense-grade web applications.",
