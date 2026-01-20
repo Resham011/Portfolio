@@ -22,7 +22,7 @@ const Hero = () => {
                     <motion.a href={socialLinks.codolio} target="_blank" rel="noopener noreferrer" whileHover={{ y: -3 }} className="text-3xl hover:text-purple-600 dark:hover:text-purple-400 transition-colors" data-interactive><FaCode /></motion.a>
                </div>
                <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <motion.a href="/Resume.pdf" download className="px-8 py-3 w-full sm:w-auto rounded-full font-semibold text-white bg-gradient-to-r from-purple-800 to-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} data-interactive>Download CV</motion.a>
+                    <motion.a href="/Resham_Resume.pdf" download className="px-8 py-3 w-full sm:w-auto rounded-full font-semibold text-white bg-gradient-to-r from-purple-800 to-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} data-interactive>Download CV</motion.a>
                     <motion.button onClick={scrollToContact} className="px-8 py-3 w-full sm:w-auto rounded-full font-semibold border-2 border-purple-600 text-purple-700 dark:text-purple-400 dark:border-purple-400 transition-all duration-300 hover:bg-purple-100/40 dark:hover:bg-purple-400/10" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} data-interactive>Contact Me</motion.button>
                </div>
                </motion.div>
