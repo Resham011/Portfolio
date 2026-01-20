@@ -47,8 +47,8 @@ export const skillsData = {
 };
 export const experienceData = [
     { 
-        date: 'July 2024 - Present', 
-        title: 'Contributor', 
+        date: 'July 2025 - October 2025', 
+        title: 'Contributor (Remote)', 
         company: 'GSSOC 2025', 
         description: 'Selected as a contributor for GirlScript Summer of Code 2025, contributing to open-source projects, collaborating with a global community of developers, and enhancing software development skills.', 
         isCurrent: true, 
@@ -60,9 +60,23 @@ export const experienceData = [
         ]
     },
     { 
+    date: 'May 2025 - July 2025', 
+    title: 'Project Trainee (Delhi, India)', 
+    company: 'Defence Research and Development Organisation (DRDO) ', 
+    description: 'Selected as a Project Trainee to engineer defense-grade web applications and microservices, focusing on secure authentication and real-time radar data visualization.', 
+    isCurrent: true, 
+    icon: FaBriefcase,
+    details: [
+        "Engineered robust role-based authentication and secure communication protocols for defense-grade web applications.",
+        "Developed microservices-based radar simulation modules with high-frequency data processing and real-time visualization.",
+        "Optimized automated reporting workflows for large-scale geospatial datasets using Python and RESTful APIs, improving data processing efficiency.",
+        "Collaborated on mission-critical software modules following strict security and documentation standards."
+    ]
+},
+    { 
         date: 'Aug 2024 - Oct 2024', 
-        title: 'Web Content Upload Intern', 
-        company: 'GAO Tek Inc. (Remote)', 
+        title: 'Web Content Upload Intern (Remote)', 
+        company: 'GAO Tek Inc. ', 
         description: 'Managed product listings on a WordPress site, focusing on SEO-friendly descriptions and metadata to improve search visibility. Gained experience in CMS workflows and remote collaboration.', 
         icon: FaBriefcase,
         details: [
