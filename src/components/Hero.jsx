@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center text-center bg-white dark:bg-black"
+      className="min-h-screen flex items-center justify-center text-center "
     >
       <div className="container mx-auto px-6">
         <motion.div

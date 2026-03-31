@@ -59,7 +59,7 @@ const About = () => (
   <SectionWrapper id="about" title="About Me">
     
     {/* 🔥 Background Layer (same as Hero) */}
-    <div className="bg-white dark:bg-black py-6 rounded-xl">
+    {/* <div className="bg-white dark:bg-black py-6 rounded-xl"> */}
       
       <div className="max-w-4xl mx-auto text-center text-lg md:text-xl text-light-text/80 dark:text-dark-text/80 leading-relaxed">
         
@@ -103,7 +103,7 @@ const About = () => (
         </motion.p>
 
       </div>
-    </div>
+    {/* </div> */}
 
   </SectionWrapper>
 );
