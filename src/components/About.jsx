@@ -5,14 +5,16 @@ import SectionWrapper from './SectionWrapper';
 const About = () => (
   <SectionWrapper id="about" title="About Me">
     <div className="max-w-4xl mx-auto text-center text-lg md:text-xl text-light-text/80 dark:text-dark-text/80 leading-relaxed">
+      
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1, duration: 0.7 }}
       >
-        I'm a passionate and performance-driven Computer Science student with a deep interest in <strong>Machine Learning</strong> and a strong command over <strong>Data Structures and Algorithms</strong>. My journey in tech has been shaped by a relentless curiosity and a love for solving complex challenges through clean, efficient code.
+        I'm a Computer Science undergraduate focused on building intelligent systems as an <strong>AI/ML Engineer and Data Scientist</strong>. I specialize in developing end-to-end machine learning solutions, from data processing and modeling to deployment, with a strong emphasis on solving real-world problems using data-driven approaches.
       </motion.p>
+
       <motion.p
         className="mt-6"
         initial={{ opacity: 0, y: 20 }}
@@ -20,8 +22,9 @@ const About = () => (
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        I've solved over <span className="font-semibold text-light-primary dark:text-dark-primary">800+ coding problems</span> across platforms like LeetCode and GeeksforGeeks, gaining deep insights into algorithmic thinking and optimization. I'm proficient in languages like <strong>C++ and Python</strong>, and regularly apply these skills in building ML models. 
+        I have hands-on experience working with <strong>machine learning, deep learning, and Generative AI</strong>, including building <strong>RAG-based LLM applications</strong> and <strong>hybrid recommendation systems</strong>. My work involves designing efficient pipelines using tools like <strong>PyTorch, FastAPI, LangChain, and vector databases</strong>, focusing on improving model accuracy, retrieval quality, and system performance.
       </motion.p>
+
       <motion.p
         className="mt-6"
         initial={{ opacity: 0, y: 20 }}
@@ -29,9 +32,21 @@ const About = () => (
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.7 }}
       >
-        On the development side, I work comfortably across the <strong>MERN stack</strong> to build full-stack web applications, but what truly excites me is applying ML to solve real-world problems—from recommendation engines to intelligent automation. I'm always looking to push boundaries, contribute to open-source projects, and stay at the forefront of AI and software innovation.
+        Alongside ML, I have a strong foundation in <strong>Data Structures and Algorithms</strong>, with <span className="font-semibold text-light-primary dark:text-dark-primary">800+ problems solved</span>, enabling me to build optimized and scalable solutions. I am proficient in <strong>Python, C++, SQL</strong> and experienced in working with structured and unstructured data for analysis and model building.
       </motion.p>
+
+      <motion.p
+        className="mt-6"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.7, duration: 0.7 }}
+      >
+        I am particularly interested in applying <strong>AI to real-world applications</strong>, including intelligent search, recommendation systems, and automation. I continuously focus on improving system performance, scalability, and practical usability while staying updated with advancements in AI and data science.
+      </motion.p>
+
     </div>
   </SectionWrapper>
 );
+
 export default About;
