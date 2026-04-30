@@ -118,20 +118,6 @@ export const experienceData = [
     ],
   },
   {
-    date: 'May 2025 - July 2025',
-    title: 'Project Trainee (Delhi, India)',
-    company: 'Defence Research and Development Organisation (DRDO)',
-    description: 'Selected as a Project Trainee to engineer defense-grade web applications and microservices, focusing on secure authentication and real-time radar data visualization.',
-    isCurrent: false,
-    icon: FaBriefcase,
-    details: [
-      'Engineered robust role-based authentication and secure communication protocols for defense-grade web applications.',
-      'Developed microservices-based radar simulation modules with high-frequency data processing and real-time visualization.',
-      'Optimized automated reporting workflows for large-scale geospatial datasets using Python and RESTful APIs, improving data processing efficiency.',
-      'Collaborated on mission-critical software modules following strict security and documentation standards.',
-    ],
-  },
-  {
     date: 'Aug 2024 - Oct 2024',
     title: 'Web Content Upload Intern (Remote)',
     company: 'GAO Tek Inc.',
@@ -215,7 +201,7 @@ export const experienceData = [
 export const projectsData = [
   {
     title: 'PDF RAG Chatbot',
-    image: Pdf, // 👉 replace with actual image later
+    image: Pdf, 
     description: 'A conversational AI system that enables users to chat with PDFs using RAG, embeddings, and LLMs.',
     tags: ['FastAPI', 'LangChain', 'FAISS', 'LLM', 'Next.js'],
     live: 'https://pdf-rag-chatbot-five.vercel.app/',
